@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NUnit.Framework;
 
 namespace CSharp7Test
 {
-	class Program
+	[TestFixture]
+	public class Tests
 	{
-		static void Main(string[] args)
+		[Test]
+		public void Test()
 		{
 			var o = Output();
 			Console.WriteLine($"{o.Item2} {o.Item1}");
